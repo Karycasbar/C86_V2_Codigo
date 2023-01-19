@@ -1,13 +1,4 @@
-fetchUser = () => {
-    let theme;
-    firebase
-      .ref("/users/jT9vClO81vPtMCjuCrUMAQpuAYc2/")
-      .on("value", snapshot => {
-        theme = snapshot.val().current_theme;
-        this.setState({ light_theme: theme === "light" });
-      });
-  }
-------------------------------------------------------------------
+
 
 <SafeAreaView style={styles.droidSafeArea} />
           <View
